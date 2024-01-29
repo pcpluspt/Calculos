@@ -42,7 +42,7 @@ namespace Calculos
         /// <param name="conversao">A conversão a efetuar.</param>
         /// <param name="temperatura">A temperatua a converter.</param>
         /// <returns>Retorna o resultado da conversão da temperatura.</returns>
-        public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
+        static public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
             {
@@ -56,5 +56,13 @@ namespace Calculos
             return -1;
         }
 
+        /// <summary>
+        /// Operação de multiplicação.
+        /// </summary>
+        /// <returns>Retorna o resultado da multiplicação de dois números.</returns>
+        public static int Multiplicar(int x, int y)
+        {
+            return x * y;
+        }
     }
 }
