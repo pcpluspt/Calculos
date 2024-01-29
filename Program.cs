@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Calculos.Aritmetica;
 
 namespace Calculos
 {
@@ -11,6 +12,9 @@ namespace Calculos
         static void Main(string[] args)
         {
             Console.WriteLine("Aplicação Cálculos");
+
+            Console.WriteLine($"4 + 2 = {Aritmetica.Somar(4, 2)}");
+            Console.WriteLine($"4 - 2 = {Aritmetica.Subtrair(4, 2)}");
 
             Console.ReadKey();
         }
